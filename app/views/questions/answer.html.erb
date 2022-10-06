@@ -1,4 +1,14 @@
-<h1 action="/ask">Answer</h1>
-question : <%= @question  %>
-The answer is : <%= @answer  %>
-<%= link_to "Ask", ask_path %>
+<div class ="container container-question"> 
+    <%= @question  %>
+    <div class ="who"> 
+    - You
+    </div> 
+</div>
+<div class ="container container-answer" role="alert"> 
+    <div class="answer">
+    <%= @answer%>
+    </div>
+    <div class ="who"> 
+        - Your coach 
+    </div>
+</div>   
